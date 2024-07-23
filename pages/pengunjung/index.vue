@@ -45,9 +45,9 @@ const getpengunjung = async () => {
   if (data) Visitors.value = data;
 }
 
-const totalpengunjung = async () => {
-  const { data, count } = await supabase.from('pengunjung').select("*", { count: 'exact' })
-}
+// const totalpengunjung = async () => {
+//   const { data, count } = await supabase.from('pengunjung').select("*", { count: 'exact' })
+// }
 
 onMounted(() => {
   getpengunjung();
